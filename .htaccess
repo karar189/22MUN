@@ -1,0 +1,12 @@
+RewriteEngine on
+
+
+
+RewriteEngine %(REQUEST_FILENAME) !-d
+
+
+RewriteEngine %{REQUEST_FILENAME}\.html -f
+
+
+
+RewriteRule ^ (.*)$ $1.html [NC,L]
