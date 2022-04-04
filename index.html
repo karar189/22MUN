@@ -95,7 +95,7 @@
                     <div class="col-xl-7 col-lg-6">
                         <div class="banner-content">
 
-                            <h2 class="wow fadeInUp" data-wow-delay="0.4s">UEM Conclave Of Nations <span>2021</span>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.4s">UEM Conclave Of Nations <span id="demo"></span>
                             </h2>
                             <h6 class="wow fadeInUp" data-wow-delay="0.2s">A potpourri of diplomacy, debate, fun and
                                 frolic</h6> <br>
@@ -433,6 +433,15 @@
 
 
     <!-- JS here -->
+    
+    <!-- for date -->
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("demo").innerHTML = year;
+    </script>
+    <!-- date end -->
+    
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
